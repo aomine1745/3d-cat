@@ -15,22 +15,20 @@ body{
 .element{
 	background-color: rgba(0, 0, 0, .5);
 	transform-style: preserve-3d;
-	perspective: 1000px;
 	transform: rotateY(50deg);
 	padding: 50px;
 }
-.element img{
+.element img {
 	animation: animate 5s infinite;
-	transform-origin: top;
+	width: 400px;
+	height: 300px;
+	object-fit: cover;
 }
-@keyframes animate{
-	0%{
+@keyframes animate {
+	0%, 100% {
 		transform: rotateX(-30deg);
 	}
-	50%{
+	50% {
 		transform: rotateX(30deg);
-	}
-	100%{
-		transform: rotateX(-30deg);
 	}
 }
