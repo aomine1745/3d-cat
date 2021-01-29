@@ -1,24 +1,25 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
+body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 }
-.container{
+.container {
 	perspective: 800px;
 }
-.element{
+.element {
 	background-color: rgba(0, 0, 0, .5);
 	transform-style: preserve-3d;
 	transform: rotateY(50deg);
 	padding: 50px;
 }
 .element img {
+	transform-origin: top;
 	animation: animate 5s infinite;
 	width: 400px;
 	height: 300px;
